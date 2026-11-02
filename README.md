@@ -137,7 +137,3 @@ Screenshots of the public property pages and administrative dashboard can be add
 - Local environment variables and database credentials are intentionally excluded from version control.
 - Property images under `server/uploads/` should be used only when you have permission to share them.
 
-## Author
-
-**Hilal Polat**  
-GitHub: [@HilalPolat](https://github.com/HilalPolat)
