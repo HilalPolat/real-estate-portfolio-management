@@ -57,14 +57,14 @@ A full-stack real estate portfolio management application built with **React**, 
 - Node.js and npm
 - PostgreSQL
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/HilalPolat/real-estate-portfolio-management.git
 cd real-estate-portfolio-management
 ```
 
-### 2. Install dependencies
+### Install dependencies
 
 ```bash
 npm install
@@ -72,29 +72,11 @@ cd server
 npm install
 ```
 
-### 3. Configure environment variables
-
-Create a `.env` file inside the `server` directory:
-
-```dotenv
-PORT=5000
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=your_database_name
-DB_USER=your_database_user
-DB_PASSWORD=your_database_password
-JWT_SECRET=replace_with_a_long_random_secret
-ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=replace_with_a_strong_password
-```
-
-> **Security:** Never commit `.env` files or real credentials. The example values above are placeholders.
-
-### 4. Set up the database
+### Set up the database
 
 Create a PostgreSQL database and configure the connection details in `server/.env`. The database schema (tables and constraints) must be created before starting the application. A database migration or SQL setup script is not currently included in this repository.
 
-### 5. Run the application
+### Run the application
 
 Start the backend in one terminal:
 
@@ -121,15 +103,6 @@ node seedAdmin.js
 ```
 
 **Note:** The seed script uses `ON CONFLICT (email) DO NOTHING`; it does not reset the password of an existing administrator account.
-
-## Screenshots
-
-Screenshots of the public property pages and administrative dashboard can be added here to demonstrate the application visually.
-
-<!-- Example:
-![Property listings](docs/screenshots/property-listings.png)
-![Admin dashboard](docs/screenshots/admin-dashboard.png)
--->
 
 ## Notes
 
