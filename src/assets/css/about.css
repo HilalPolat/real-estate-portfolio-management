@@ -1,0 +1,227 @@
+.about {
+  background: linear-gradient(135deg, #faf7f4 0%, #f5efe9 60%, #ede4da 100%);
+  padding-top: 130px;
+}
+
+.about-breadcrumb {
+  opacity: 0.65;
+  color: var(--mid) !important;
+}
+
+.about-title {
+  color: var(--dark);
+}
+
+.about-subtitle {
+  font-weight: 600;
+  color: var(--mid) !important;
+  font-size: 1.05rem;
+}
+
+.about-text {
+  color: var(--mid) !important;
+}
+
+.about-image-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(64, 52, 45, 0.14);
+  position: relative;
+}
+
+.about-image-wrap::after,
+.mission-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 28, 20, 0.35);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image-wrap:hover .about-image {
+  transform: scale(1.03);
+}
+
+.about-accent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(99, 80, 62, 0.1);
+  border: 1px solid rgba(99, 80, 62, 0.2);
+  color: var(--mid);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 16px;
+}
+
+.about-accent-badge::before {
+  content: "✦";
+  font-size: 10px;
+  color: var(--mid);
+  opacity: 0.7;
+}
+
+.about-stats {
+  border-radius: 18px;
+}
+
+.stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(99, 80, 62, 0.12);
+  color: var(--mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.stat-number {
+  font-size: 22px;
+  color: var(--dark);
+}
+
+@media (min-width: 768px) {
+  .stat-divider {
+    position: relative;
+  }
+  .stat-divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: rgba(99, 80, 62, 0.15);
+  }
+}
+
+.mission-section {
+  background: linear-gradient(180deg, #f5efe9 0%, #ede4da 50%, #e8ddd4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-section::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(99, 80, 62, 0.07) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.mission-title {
+  color: var(--dark);
+}
+
+.mission-text {
+  max-width: 520px;
+  color: var(--mid) !important;
+}
+
+.mission-image-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(64, 52, 45, 0.14);
+  position: relative;
+}
+
+.mission-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.mission-image-wrapper:hover .mission-image {
+  transform: scale(1.03);
+}
+
+.vision-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  border: 1px solid rgba(199, 181, 163, 0.35);
+  box-shadow: 0 8px 30px rgba(64, 52, 45, 0.08);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.vision-card:hover {
+  box-shadow: 0 14px 40px rgba(64, 52, 45, 0.13);
+  transform: translateY(-3px);
+}
+
+.vision-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(99, 80, 62, 0.12);
+  color: var(--mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.about-values-strip {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-value-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(99, 80, 62, 0.1);
+  border: 1px solid rgba(99, 80, 62, 0.18);
+  color: var(--mid);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 30px;
+  transition: background 0.2s ease;
+}
+
+.about-value-tag i {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.about-value-tag:hover {
+  background: rgba(99, 80, 62, 0.18);
+}
+
+@media (max-width: 768px) {
+  .about-text,
+  .mission-text {
+    max-width: 100%;
+  }
+}

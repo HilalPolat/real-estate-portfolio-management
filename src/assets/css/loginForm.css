@@ -1,0 +1,80 @@
+
+.login-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Input group icon */
+.login-icon {
+  background: rgba(199, 181, 163, 0.15);
+  border-right: 0;
+  border-color: rgba(199, 181, 163, 0.5);
+  color: var(--mid);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+/* Input */
+.login-input {
+
+  border-left: 0;
+  border-color: rgba(199, 181, 163, 0.5);
+  background: rgba(199, 181, 163, 0.08);
+  color: var(--dark);
+  padding: 12px 14px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(99, 80, 62, 0.45);
+}
+
+/* Focus state — tüm group birlikte renk değiştiriyor */
+.input-group:focus-within .login-input,
+.input-group:focus-within .login-icon {
+  border-color: var(--mid);
+  background: rgba(199, 181, 163, 0.18);
+  box-shadow: none;
+  outline: none;
+}
+
+.login-input:focus {
+  box-shadow: none;
+  border-color: var(--mid);
+  background: rgba(199, 181, 163, 0.18);
+}
+
+/* Buton */
+.login-btn {
+  padding: 12px 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: var(--dark);
+  border: none;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 24px rgba(64, 52, 45, 0.3);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.login-btn:hover {
+  background: var(--mid);
+  color: #fff;
+}
+
+
+/* Hata mesajı */
+.alert-danger {
+  background: rgba(180, 80, 60, 0.1);
+  border: 1px solid rgba(180, 80, 60, 0.25);
+  color: #8b3a2a;
+  border-radius: 10px;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,30 @@
+
+
+ .main-filter {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+  overflow: hidden;
+  height: 400px;
+} 
+@media (max-width: 768px) {
+  .main-filter {
+    height: 500px;
+  }
+}
+
+.main-subtitle {
+  max-width: 520px;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.main-card {
+  border-radius: 14px;
+}
+
+.main-badge {
+  border-radius: 999px;
+  padding: 8px 10px;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home.jsx";
+import About from "./pages/about.jsx";
+import Portfolios from "./pages/portfolio.jsx";
+import Login from "./pages/login.jsx";
+import Dashboard from "./pages/dashboard.jsx";
+import PortfolioDetail from "./pages/portfolioDetail.jsx";
+import ScrollToTop from "../src/components/scrollToTop.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolios />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
